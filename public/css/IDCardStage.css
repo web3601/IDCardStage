@@ -1,0 +1,338 @@
+@charset "UTF-8";
+body {
+    font-size: 16px;
+    font-size: 1rem;
+
+}
+
+.container-fluid {
+    padding: 0;
+}
+/*字体颜色开始*/
+.cff4081{
+    color:#FF4081;
+}
+/*字体颜色结束*/
+/*按钮颜色统一开始*/
+.idCardBtn{
+    background-color:#FF4081;
+    color: #fff;
+    font-weight: bold;
+}
+/*按钮颜色统一结束*/
+/*多选框样式重写*/
+.tickVessel {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    background: #EDF0F8 url(../cssImg/checkbox.gif) no-repeat -15px -18px;
+    background-origin: content-box;
+}
+
+.tickVesselActive {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    background: #EDF0F8 url(../cssImg/checkbox.gif) no-repeat -15px -219px;
+    background-origin: content-box;
+}
+/*多选框样式重写*/
+header {
+
+    height: 5vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /*background-color: #FF4081;*/
+    background-color: #241b1d;
+    color: #fff;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+}
+
+section {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*选择分期开始*/
+.chooseIDCardRadio {
+
+}
+
+.chooseIDCardRadio p {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #DBDBDB;
+    z-index: 999;
+}
+
+.chooseIDCardRadio p.active {
+    color: #FF4081;
+}
+
+.chooseIDCardRadio p input[type='radio'] {
+    display: inline-block;
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+/*选择分期结束*/
+/*手动选择区域开始*/
+.handleChoose {
+}
+
+.handleChoose .chooseAddress {
+    /*width: 55vw;*/
+    width: 40vw;
+    height:5vh;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 2px 3px;
+}
+.handleChoose .handleChooseSelectSubmit {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 3rem 0;
+}
+.handleChoose .handleChooseSelectSubmit .btn {
+    background-color: #FF4081;
+    display: inline-block;
+    color: #fff;
+    max-width: 30vw;
+    width: 30vw;
+    font-weight: bold;
+}
+.handleChoose .handleChooseSelectPrice {
+    width:30vw;
+    height:5vh;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 2px 3px;
+}
+
+.handleChoose>p{
+    margin-top:31px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .handleChoose>p span{
+        display: inline-block;
+        width:20vw;
+        margin-right:3vw;
+        font-size:1.525rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .handleChoose>p span{
+        display: inline-block;
+        width:7vw;
+        margin-right:3vw;
+        font-size:1.525rem;
+    }
+
+}
+
+.handleChoose #handleChooseSelectProduct,.handleChoose #handleChooseSelectTimeLength{
+    display: inline-block;
+    border-radius:5px;
+    /*width: 55vw;*/
+    width: 40vw;
+    height:5vh;
+    color: #888888;
+}
+/*手动选择区域结束*/
+
+/*选择区域的附近门店*/
+.chooseAddress {
+
+}
+
+.chooseAddress .searchArea {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: #C7C7C7;*/
+    padding: 2rem 1rem 1rem;
+}
+
+.chooseAddress .searchArea .searchGroup {
+    display: inline-block;
+    margin-right: 2vw;
+    background-color: #fff;
+    padding: 0 0.825rem;
+    border-radius: 5px;
+    border:1px solid rgba(153,153,153,0.58);
+}
+
+.chooseAddress .searchArea .searchGroup .search {
+    width: 58vw;
+    height: 32px;
+    line-height:32px;
+    border-radius: 5px;
+    border: 0;
+    padding: 2px 3px;
+}
+
+.chooseAddress .searchArea .searchGroup .del {
+    cursor: pointer;
+}
+
+.chooseAddress .searchArea .btn {
+    /*color: #000;*/
+
+}
+
+/*选择区域的附近门店*/
+.nearbyShop {
+}
+
+.nearbyShop .nearbyShopTitle {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.625rem;
+    color: #E51C23;
+    background-color: #F8F8F8;
+}
+
+.nearbyShop .nearbyShopUl {
+
+}
+
+.nearbyShop .nearbyShopUl li {
+    background-color: #fff;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2px;
+    /*width:80vw;*/
+    /*margin:0 auto;*/
+}
+
+.nearbyShop .nearbyShopUl li:hover {
+    cursor: pointer;
+}
+
+.nearbyShop .nearbyShopUl li input[type='radio']:hover {
+    cursor: pointer;
+}
+
+.nearbyShop .nearbyShopUl .nearbyShopUlText {
+
+}
+
+.nearbyShop .nearbyShopUl .nearbyShopUlText .shopName {
+    font-size: 2rem;
+    width: 56vw;
+
+}
+
+.nearbyShop .nearbyShopUl .nearbyShopUlText .shopAddress {
+    width: 50vw;
+    color: #B3B3B3;
+
+}
+
+.nearbyShop .nearbyShopUl input[type='radio'] {
+    display: inline-block;
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+.nearbyShop .nearbyShopButton {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.nearbyShop .nearbyShopButton .btn {
+    background-color: #FF4081;
+    display: inline-block;
+    color: #fff;
+    max-width: 30vw;
+    width: 30vw;
+    font-weight: bold;
+}
+
+/*选择区域的附近门店页面结束*/
+/*chooseAddress.php*/
+.likeImgAndLikeStar{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.likeHand {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size:2rem;
+    color: #999;
+    margin-right:5px;
+}
+.likeHand s.like {
+    display: inline-block;
+    width:32px;
+    height:32px;
+    background: url('../cssImg/like.png') no-repeat;
+    margin-right:1rem;
+    border:0;
+}
+.likeHand s.noLike {
+    display: inline-block;
+    width:32px;
+    height:32px;
+    background: url('../cssImg/noLike.png') no-repeat;
+    margin-right:1rem;
+    border:0;
+}
+
+.likeStar{
+    margin-top:10px;
+}
+/*chooseAddress.php*/
+
+/*选择地址搜索店铺页面*/
+.chooseAddressSearchShop{}
+.chooseAddressSearchShop{}
+/*选择地址搜索店铺页面结束*/
+
+
+/*自适应的手机页面*/
+@media screen and (max-width:768px){
+    
+}
